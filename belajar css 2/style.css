@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif, Arial;
+}
+
+
+body {
+    background-image: url(asset/2.jpg);
+    background-size: cover;
+    background-repeat: center;
+    min-height: 100vh;
+    font-family: 'Montserrat';
+}
+
+#Logo:hover{
+    cursor: pointer;
+    color: yellowgreen;
+    transition: 0.8s ;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin:0px 100px;
+    color: aqua;
+}
+
+nav ul{
+    display: flex;
+    margin: 0px 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: aquamarine;
+    transition: 0.5s;
+}
+
+.content-samping {
+    display: flex;
+    padding: 20px;
+    margin: 0px 100px;
+}
+.samping-kiri {
+    max-width: 80%;
+}
+.cardLogin {
+    padding:20px 20px;
+    margin: 20px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.samping-kanan {
+    max-width:80% ;
+}
+.samping-kanan .card img {
+    max-width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: block;
+    margin: auto;
+}
+.card {
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+}
+.card p:first-child{
+    padding: 20px;
+}
+.cardLogin form input{
+    margin: 5px 0px;
+    width: 70%;
+    height: 20px;
+}
+.cardLogin form button {
+    background-color: #007bff;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.cardLogin form  a{
+    text-decoration: none;
+    color: black;
+}
+.cardLogin form  a:hover{
+    color: greenyellow;
+    transition: .5s;
+}
+
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    padding: 20px;
+    bottom: 0px;
+    color: white;
+    display: flex;
+}
+
+footer p {
+    color: white;
+    margin:0px 100px;
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        margin: 0px;
+       }
+    .content-samping {
+        width: 80%;
+        display: table-row;
+        margin: auto;
+    }
+    .samping-kiri {
+        margin: auto;
+    }
+    .samping-kanan {
+        margin: auto;
+    }
+}
+/* smartphone */
+@media only screen and (max-width: 767px) {
+    header {
+        margin: 0px;
+       }
+    .content-samping {
+        width: 80%;
+        display: table-row;
+        margin: auto;
+    }
+    footer p{
+        margin: 0px;
+    }
+    .samping-kiri {
+        margin: auto;
+    }
+    .samping-kanan {
+        display: none;
+    }
+  }
+  

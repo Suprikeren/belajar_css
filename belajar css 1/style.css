@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat',sans-serif,Arial, ;
+}
+body {
+    background-image:url(asset/none.svg);
+    background-size: cover; /* Untuk mengisi seluruh area latar belakang */
+    background-position: center center; /* Posisi gambar latar belakang */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar latar belakang */
+    /* background-color: whitesmoke; */
+    font-family: 'Montserrat';
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    /* padding: 20px 110px ; */
+    margin: 20px 100px;
+    justify-content: space-between;
+    color: black;
+}
+#LOGO:hover {
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    padding: 5px;
+    list-style: none;
+    text-decoration: none;
+   
+}
+nav ul li {
+    margin: 5px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color:aquamarine;
+    transition: color .5s;
+}
+
+.anchor {
+    display: flex;
+    margin: 10px 15px;
+}
+
+.anchor a {
+    text-decoration: none;
+    margin: 0px 5px;
+    color: black;
+}
+.garing {
+    transform: rotate(-100deg);
+   display: inline-block;
+}
+.icons i {
+    margin:2px 5px;
+}
+.icons i:hover{
+    cursor: pointer;
+}
+
+main {
+    margin: 120px 100px;
+}
+
+
+.content article h1 {
+    font-size: 50px;
+}
+
+.content article button {
+    background-color: rgba(30, 144, 255, 0.8);
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    border: 2px solid rgba(30, 144, 255, 0.8);
+    margin-top: 5px;
+}
+.content h1 {
+    margin-top: 10px;
+}
+.content article a{
+    color: white;
+    font-size: 15px;
+    padding: 50px;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    display: none;
+}
+
+@media screen and (min-width: 925px) {
+    body {
+        /* membuat background image terisi sampai bawah pada saat responsive */
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+    
+}
+
+@media screen and (max-width: 924px) {
+    body {
+        /* membuat background image terisi sampai bawah pada saat responsive */
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+    .icons i {
+        display: none;
+    }
+}
+
+
+@media screen and ( max-width: 500px) {
+    header {
+        margin: 25px;
+        align-items: baseline; /*untuk meratakan text */
+    }
+    #LOGO {
+        font-size: 20px;
+    }
+    nav ul li{
+        display: none;
+    }
+    main {
+        margin:200px 25px;
+    }
+    body {
+        /* membuat background image terisi sampai bawah pada saat responsive */
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+}
