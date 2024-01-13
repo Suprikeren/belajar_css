@@ -1,0 +1,170 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+header {
+    width: 1280px;
+    padding: 10px 50px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    justify-content: space-between;
+    align-items: start;
+}
+header h1:hover {
+    cursor: pointer;
+}
+.Logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.Logo input {
+    margin-left:15px ;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    background-color: grey;
+    border-radius:50% ;
+    box-shadow: 30px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+nav button {
+    width: 105px;
+    height: 30px;
+    border-radius: 25px ;
+}
+nav button:hover, img:hover{
+    cursor: pointer;
+}
+section{
+    width: 1200px;
+    margin: 70px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#content-kiri{
+    width: 720px;
+    padding: 19px;
+}
+.topik {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.topik ul {
+    margin-right: 19px;
+    list-style-type: none;
+    display: flex;
+}
+.topik ul li {
+    margin-right: 5px;
+}
+.topik ul li a{
+    display: flex;
+    text-decoration: none;
+    color: grey;
+    background-color:rgba(58, 53, 65, 0.08);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.topik p a{
+    text-decoration: none;
+    color:rgba(0, 85, 85, 1);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    margin-left: 50px;
+}
+.listBacaan {
+    width: 720px;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 24px;
+    width: 720px;
+    height: 120px;
+}
+.card img {
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+}
+.content {
+    width: 500px;
+    height: 100px;
+}
+#content-kanan {
+    padding: 19px;
+    width: 367px;
+}
+.card-kanan {
+    width: 300px;
+    padding: 19px;
+}
+.list {
+    width: 280px;
+    margin: auto 0px;
+    padding: 5px;
+}
+.rekomPenulis{
+    width: 300px;
+    margin-top: 20px;
+    padding: 19px;
+}
+.penulis-list{
+    display: flex;
+    margin-top: 10px;
+}
+.penulis {
+    display: flex;
+    width: 300px;
+    margin-top: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.penulis img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.penulis-list > p {
+    margin-top: 16px;
+    width: 300px;
+    text-align: center;
+}
+.penulis-list > p a {
+    color:rgba(0, 85, 85, 1);
+    text-decoration: none;
+}
+
+
+footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 1280px;
+}

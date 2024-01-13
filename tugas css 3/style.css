@@ -1,0 +1,161 @@
+*, html, body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+#Logo-mobile {
+    display: none;
+}
+
+section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+}
+
+.ilustration {
+    width:720px;
+    height:1024px;
+    /* padding: 80px, 84px, 80px, 84px; */
+    background-color:rgba(0, 85, 85, 1);
+}
+#Logo {
+    width: 178px;
+    height: 40px;
+    margin: 30px auto 20px auto;
+    gap: 3px;
+}
+#Logo img {
+    width: 75%;
+    height: 75%;
+}
+#Logo img:hover {
+    cursor: pointer;
+}
+#Illustration {
+    width: 480px;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Illustration img{
+    width: 75%;
+    height: 90%;
+    margin: auto;
+}
+#Illustration img:hover {
+    cursor: pointer;
+}
+.auth {
+    width:  720px;
+    height:  1024px;
+    gap: 164px;
+    background-color: whitesmoke;
+}
+
+.cardLogin {
+    background-color: white;
+    width:  350px;
+    height:  426px;
+    padding: 48px 24px ;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 52.5px auto 52.5px auto;
+}
+.text h1, p {
+    text-align: center;
+    margin: 2px;
+}
+.text h1:hover, p:hover{
+    cursor: pointer;
+    color: aquamarine;
+    transition: .5s;
+}
+form {
+    padding: 10px;
+}
+form input {
+    width: 100%;
+    height: 26px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px solid grey;
+    padding: 5px;
+}
+form input:hover, label:hover, button:hover{
+    cursor: pointer;
+}
+.text-a {
+    display: flex;
+    justify-content: space-between;
+    font-size:12px ;
+    color:  rgba(0, 85, 85, 1);
+}
+a {
+    text-decoration: none;
+    color: rgba(0, 85, 85, 1);
+}
+form button {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+}
+form button[name="Login"]{
+    background-color: rgba(0, 85, 85, 1);
+    color: white;
+}
+form button[name="Login"] a {
+    color: white;
+}
+form button[name="googleLogin"]{
+    color: rgba(0, 85, 85, 1);
+    background-color: transparent;
+}
+
+footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 720px;
+}
+
+@media (max-width: 767px) {
+    .ilustration {
+        display: none;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    .auth {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        gap: 20px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    #Logo-mobile {
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin: 30px auto 30px auto;
+        color:rgba(0, 85, 85, 1);
+        gap: 3px;
+        font-family: 'Inter';
+    }
+    .cardLogin {
+        width: 80%;
+        margin: 20px auto;
+    }
+    footer {
+        width: 100%;
+    }
+}
