@@ -6,7 +6,9 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
-
+.topik-mobile{
+    display: none;
+}
 header {
     width: 1280px;
     padding: 10px 50px;
@@ -104,10 +106,22 @@ section{
     width: 720px;
     height: 120px;
 }
+.card p {
+    font-size: 13.5px;
+    margin: 4px 0px;
+    word-wrap: break-word;
+}
 .card img {
     width: 200px;
-    height: 100px;
+    height: 115px;
     margin-right: 20px;
+}
+.listBacaan .card .penulis {
+    margin:4px 0px;
+}
+.listBacaan .card button[name="media"]{
+    border-radius: 20px;
+    padding: 2px;
 }
 .content {
     width: 500px;
@@ -117,6 +131,11 @@ section{
     padding: 19px;
     width: 367px;
 }
+.h4 {
+    padding:0px 19px; 
+    /* gak tau knapa h4 gak bisa dipanggil jadi aku kasih class aja */
+}
+
 .card-kanan {
     width: 300px;
     padding: 19px;
@@ -168,3 +187,77 @@ footer {
     bottom: 0;
     width: 1280px;
 }
+
+
+/* smartphone */
+@media only screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+       }
+       header input {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 20%;
+        position: absolute;
+        top:80px;
+        left: auto;
+       }
+       header nav button {
+        display: none;
+       }
+       section {
+        width: 100%;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        padding:auto;
+       }
+       #content-kiri{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: auto;
+        order: 2;
+        /* display: none; */
+        width: 100%;
+       }
+       #content-kiri .topik {
+        display: none;
+       }
+        .content  {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+       }
+       footer {
+        width: 100%;
+        bottom: 0px;
+       }
+       /* content kanan */
+       .topik-mobile{
+        display: flex;
+        width: 98%; 
+        white-space: nowrap; /* untuk teks tidak misah ketika overflow */
+        overflow-x: auto; /* untuk geser kiri kanan */
+        padding: 20px;
+       }
+       .topik-mobile ul  {
+        display: flex;
+        list-style-type: none;
+       }
+       .topik-mobile ul li {
+        margin: 5px;
+       }
+       .topik-mobile ul li a{
+         text-decoration: none;
+         color: black;
+       }
+      #content-kanan h4{
+        margin: auto;
+        order: 1;
+      }
+
+  }
